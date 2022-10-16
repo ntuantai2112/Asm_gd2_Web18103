@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+@media (min-width: 640px) { 
+    .products{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 32px;
+    }
+    .item img{
+        width: 100%;
+    }
+    .item h3{
+        font-size: 20px;
+    }
+}
+@media(min-width:1000px){
+    .products{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 32px;
+    }
+    .item img{
+        width: 100%;
+    }
+    .item h3{
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assiment Level 1</title>
+    <link rel="stylesheet" href="assets/grid.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/reponsive.css" />
+    <!-- <link rel="stylesheet" href="assets/style.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  
+  </head>
+  <body>
+    <div class="big">
+      <!-- Header -->
+      <div class="header mg-64 fixed">
+        <div class="logo">
+          <img src="assets/img/logo (2).png" alt="Logo" />
+        </div>
+        <!-- Menu -->
+        <div class="nav">
+          <ul>
+            <li><a href="#">Corona Updates</a></li>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Podcasts</a></li>
+          </ul>
+        </div>
+        <!-- Action-btn -->
+        <div class="action">
+          <div class="header__person">
+            <img src="assets/img/header_person.png" alt="" />
+          </div>
+          <div class="header__search">
+            <img src="assets/img/header_search.png" alt="" />
+          </div>
+          <div class="header__menu">
+            <img src="assets/img/header_menu.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- Header Mobile -->
+      <input type="checkbox" hidden    class="nav__input" id="nav-mobile-input">
+      <label for="nav-mobile-input" class="header__overlay"></label>
+
+      <div class="header__mobile">
+        <div class="logo__mobile">
+          <img src="assets/img/logo (2).png" alt="Logo" />
+        </div>
+        <!-- Action-btn__Mobil -->
+        <div class="action__mobile">
+          <div class="header__person">
+            <img src="assets/img/header_person.png" alt="" />
+          </div>
+          <div class="header__search">
+            <img src="assets/img/header_search.png" alt="" />
+          </div>
+          <div for="nav-mobile-input" class="header__menu" id="menu__mobile">
+            <img src="assets/img/header_menu.png" alt="" />
+          </div>
+        </div>
+        <!-- Menu__Mobile -->
+        <!-- Menu -->
+        <label   class="nav__mobile">
+            <label for="nav-mobile-input" class="nav__mobile-close">  
+              <i class="bi bi-x"></i>
+            </label>
+            <ul class="nav__mobile-list">
+              <li><a href="#">Corona Updates</a></li>
+              <li><a href="#">Politics</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">World</a></li>
+              <li><a href="#">Travel</a></li>
+              <li><a href="#">Podcasts</a></li>
+            </ul>
+        </label>
+      </div>
+      
+
+      <div class="main">
+        <!-- Content -->
+        <div class="content">
+          <!-- Introduce (banner&& desc) -->
+          <div class="introduce mg-64">
+            <div class="banner">
+              <img src="assets/img/Banner.png" alt="Banner" />
+            </div>
+            <div class="desc">
+              <!-- Trending -->
+              <div class="trending">
+                <h6>Trending</h6>
+                <div class="favorites">
+                  <div class="tym">
+                    <img src="assets/img/tym.png" alt="" />
+                  </div>
+                  <div class="mailbox">
+                    <img src="assets/img/mailbox.png" alt="" />
+                  </div>
+                  <div class="comment">
+                    <img src="assets/img/comment.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="post">
+                <div class="title mg-20">
+                  <p>
+                    Cake meme reflects coronavirus absurdity in a world where
+                    nothing is what it seems
+                  </p>
+                </div>
+                <div class="post-content mg-20">
+                  <p>
+                    Earlier this month, a viral video depicting hyper-realistic
+                    cakes as everyday items had folks on social media
+                    double-guessing every other post, and sometimes even their
+                    own realities, effectively launching the next meme : “Is
+                    this real or is this cake?”
+                  </p>
+                </div>
+                <div class="time">
+                  <div class="time__ago">
+                    <p>2 hours ago</p>
+                  </div>
+                  <div class="time__lucy">
+                    <p>By Lucy Hiddleston | 4min read</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Introduces -->
+          <!-- Crossbar -->
+          <div class="crossbar mg-51">
+            <div class="box">
+              <p>Breaking News</p>
+            </div>
+            <div class="crossbar__content">
+              <p>Kanye West says he's running for president in 2020.</p>
+            </div>
+          </div>
+          <!-- End Crossbar -->
+          <!-- Option -->
+          <div class="option mg-20">
+            <div class="option__menu">
+              <ul class="option__flex">
+                <li><a href="#" class="latest">Latest Stories</a></li>
+                <li><a href="#" class="think">Think</a></li>
+                <li><a href="#" class="health">Health</a></li>
+              </ul>
+            </div>
+            <div class="selection__bar">
+              <img src="assets/img/content(3).png" alt="" />
+              <img src="assets/img/content-one.png" alt="" />
+            </div>
+          </div>
+          <!-- Article -->
+          <div class="article">
+            <!-- Modal box -->
+            <div class="modal__box">
+              <div class="item__img">
+                <img src="assets/img/item1.png" alt="" />
+              </div>
+              <div class="item__bag">
+                <div class="item__title">
+                  <p>
+                    John Lewis to make final journey across Edmund Pettus Bridge
+                    in procession
+                  </p>
+                </div>
+                <div class="item__content">
+                  <p>
+                    The body of the late US Rep. John Lewis on Sunday will make
+                    the final journey across the famous bridge in Selma,
+                    Alabama, where he helped lead a march for voting rights in
+                    1965.
+                  </p>
+                </div>
+                <div class="item__time">
+                  <div class="item__ago">
+                    <p>2 hours ago</p>
+                  </div>
+                  <div class="item__lucy">
+                    <p>By Lucy Hiddleston | 4min read</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Border top -->
+              <div class="border__top"></div>
+              <div class="item__icon">
+                <div class="item__bag__icon">
+                  <div class="icon_tym">
+                    <img src="assets/img/tym_red.png" alt="" />
+                    <span>28</span>
+                  </div>
+                  <div class="icon_mailbox">
+                    <img src="assets/img/mailbox.png" alt="" />
+                    <span>72</span>
+                  </div>
+                  <div class="icon_comment">
+                    <img src="assets/img/comment.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End modal-box 1 -->
+
+            <div class="modal__box">
+              <div class="item__img">
+                <img src="assets/img/item2.png" alt="" />
+              </div>
+              <div class="item__bag">
+                <div class="item__title">
+                  <p>
+                    John Lewis, civil rights giant, crosses infamous Selma
+                    bridge one final time
+                  </p>
+                </div>
+                <div class="item__content pd-24">
+                  <p>
+                    Solemn crowds watch as Lewis, who died earlier this month at
+                    the age of 80, is borne by caisson over Edmund Pettus Bridge
+                  </p>
+                </div>
+                <div class="item__time">
+                  <div class="item__ago">
+                    <p>4 hours ago</p>
+                  </div>
+                  <div class="item__lucy">
+                    <p>By Lucy Hiddleston | 4min read</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Border top -->
+
+              <div class="item__icon">
+                <div class="item__bag__icon">
+                  <div class="icon_tym">
+                    <img src="assets/img/tym.png" alt="" />
+                    <span>28</span>
+                  </div>
+                  <div class="icon_mailbox">
+                    <img src="assets/img/mailbox.png" alt="" />
+                    <span>72</span>
+                  </div>
+                  <div class="icon_comment">
+                    <img src="assets/img/comment.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End modal-box 2 -->
+
+            <div class="modal__box">
+              <div class="item__img">
+                <img src="assets/img/item3.png" alt="" />
+              </div>
+              <div class="item__bag">
+                <div class="item__title">
+                  <p>
+                    20 Years Ago, Steve Jobs Built the ‘Coolest Computer Ever.’
+                    It Bombed
+                  </p>
+                </div>
+                <div class="item__content pd-24">
+                  <p>
+                    20 Years Ago, Steve Jobs Built the ‘Coolest Computer Ever.’
+                    It Bombed
+                  </p>
+                </div>
+                <div class="item__time">
+                  <div class="item__ago">
+                    <p>12 hours ago</p>
+                  </div>
+                  <div class="item__lucy">
+                    <p>By Lucy Hiddleston | 4min read</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Border top -->
+
+              <div class="item__icon">
+                <div class="item__bag__icon">
+                  <div class="icon_tym">
+                    <img src="assets/img/tym.png" alt="" />
+                    <span>28</span>
+                  </div>
+                  <div class="icon_mailbox">
+                    <img src="assets/img/mailbox.png" alt="" />
+                    <span>72</span>
+                  </div>
+                  <div class="icon_comment">
+                    <img src="assets/img/comment.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End modal-box 3 -->
+          </div>
+          <div class="view__more mg-64">
+            <div class="view__more-btn">
+              <button>View More</button>
+            </div>
+          </div>
+          <!-- End view more -->
+
+          <!-- News -->
+          <div class="news mg-64">
+            <div class="news__title mg-20">
+              <h3>Editor’s Picks</h3>
+            </div>
+            <div class="news__bag">
+              <div class="news__first">
+                <div class="first__img">
+                  <img src="assets/img/post1.png" alt="" />
+                </div>
+                <div class="first__bag">
+                  <div class="first__title">
+                    <p>
+                      Serological surveys are being conducted to test for
+                      coronavirus antibodies. How useful are they?
+                    </p>
+                  </div>
+                  <div class="first__content">
+                    <p>
+                      The authorities are hoping to find that a substantial
+                      proportion of the population has already been infected
+                      with the virus – and so is immune.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- News Second -->
+              <div class="news__second">
+                <div class="second__img">
+                  <img src="assets/img/post2.png" alt="" />
+                </div>
+                <div class="second__bag">
+                  <div class="second__title">
+                    <p>
+                      Making a mark in Asia: East Bengal’s 2003 Asean Cup win –
+                      a defining moment for Indian club football
+                    </p>
+                  </div>
+                  <div class="second__content">
+                    <p>
+                      Beating some of the finest teams from South Asia, East
+                      Bengal became the first Indian club to win an officially
+                      recognised Asian football tournament.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End News -->
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer>
+        <div class="grid wide">
+          <div class="row">
+            <div class="col l-4 m-6 c-12">
+              <div class="footer__logo">
+                <div class="footer__center">
+                  <img src="assets/img/footer-logo (1).png" alt="" />
+                  <p>copyright @ 2020 | NBC NEWS</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l-4 m-6 c-12">
+              <div class="footer__content">
+                <p class="footer__text">
+                  Privacy Policy Do not sell my personal info Terms of Service
+                  nbcnews.com Site Map
+                </p>
+              </div>
+            </div>
+
+            <div class="col l-4 m-12 c-12">
+              <div class="footer__network">
+                <div class="footer__nav">
+                  <a href="#">About</a>
+                  <a href="#">Contact</a>
+                  <a href="#">Careers</a>
+                  <a href="#">Coupons</a>
+                </div>
+                <div class="footer__icon">
+                  <a href="#"><i class="fa-solid fa-wifi"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-discord"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+      
+    </script>
+    <script src="assets/main.js"></script>
+
+  </body>
+</html>

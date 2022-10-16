@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/style.css">
+  
+    <style>
+       *{
+        padding: 0;
+        margin: 0;  
+        box-sizing: border-box;
+       }
+    </style>
+   
+   
+
+<body>
+     
+  <div class="main overflow-hidden">
+    <div class="nav__overlay md:hidden block fixed top-0 right-0 left-0 bottom-0  "></div>
+     <!-- Header Mobile -->
+     <div class="header__Mobile flex  md:hidden   h-[76px] w-full bg-white fixed top-0 left-0 right-0 z-10  justify-between px-2 ">
+        <div class="logo my-[18px]">
+            <img src="images/Logo.png" alt="" class="hover:cursor-pointer">
+        </div>
+        <button class="  md:flex h-[30px] mt-[22px] border border-[#2C5282]   text-[#2C5282] text-lg font-normal px-[26px] py-[2px]  rounded-md hover:bg-[#2C5282] hover:text-white">Login</button>
+        <div class="nav__moblie">
+           <label for="" class="btn__menu-mobile">
+            <img src="images/nav__bả.png" alt="" class="md:hidden w-[60px] pt-[8px]">
+           </label>
+           <div class="menu__mobile fixed top-0 left-0 bottom-0 w-[300px] bg-white translate-x-[-100%] pt-[60px] ">
+            <div class="close">
+                <img src="images/close.jpg" alt="" class="w-[40px] absolute top-5 right-5">
+            </div>
+            <ul class=" nav__mobile-list mx-[30px] mt-[30px]">
+                <li class=" nav__mobile-link block py-[19px] border-b-2   "><a href="#" class="text-2xl font-bold text-[#2C5282] hover:text-orange-500 hover:cursor-pointer ">Trang Chủ</a></li>
+                <li class=" nav__mobile-link block py-[19px] border-b-2  "><a href="Competitions.html" class="text-2xl font-bold text-[#2C5282] hover:text-orange-500 hover:cursor-pointer ">Các Cuộc Thi</a></li>
+                <li class=" nav__mobile-link block py-[19px] border-b-2  "><a href="" class="text-2xl font-bold text-[#2C5282] hover:text-orange-500 hover:cursor-pointer ">Test Năng Lực</a></li>   
+            </ul>
+           </div>
+        </div>
+        
+
+     </div>
+      <!-- Header Menu PC -->
+        <!-- Logo Header -->
+    <header class="hidden md:flex  header__pc  md:px-[40px]  xl:px-[100px]  h-[76px] w-full bg-white fixed top-0 left-0 right-0 z-10  justify-around shadow-sm ">
+       
+        <div class="logo my-[18px]">
+            <img src="images/Logo.png" alt="" class="hover:cursor-pointer">
+        </div>
+        
+        <div class="nav flex flex-1 justify-end pr-[20px] items-center ">
+            <ul class="sm:hidden md:block lg:block xl:block">
+                <li class="inline-block py-[29px]  "><a href="#" class="font-bold text-[#2C5282]  text-lg hover:text-orange-400  ">Trang Chủ</a></li>
+                <li class="inline-block py-[29px] px-[24px]"><a href="Competitions.html" class="font-bold text-[#2C5282]  text-lg hover:text-orange-400  ">Các Cuộc Thi</a></li>
+                <li class="inline-block py-[29px] "><a href="" class="font-bold text-[#2C5282]  text-lg hover:text-orange-400  ">Test Năng Lực</a></li>
+               
+            </ul>
+        </div>
+        <!-- Button -->
+        <button class=" h-[30px] mt-[22px] border border-[#2C5282]   text-[#2C5282] text-lg font-normal px-[26px] py-[2px]  rounded-md hover:bg-[#2C5282] hover:text-white">Login</button>
+     
+    </header>
+    <!-- Banner -->
+    <div class="banner   bg-gradient-to-t:">
+        <img src="images/banner.png" alt="" class="w-full mt-[70px] ">
+    </div>
+    <!-- Content -->
+    <div class="content mx-5 xl:mx-[190px] lg:px-[20px]  ">
+        <!-- Contest -->
+        <div class="contest grid  md:grid-cols-2 gap-[32px] my-[64px] items-center sm:grid-cols-1 sm:mt-8 ">   
+            <div class="firt_content     ">
+                <h3 class="text-[#F26F21]  xl:font-semibold xl:text-2xl lg:text-2xl lg:font-semibold md:text-[20px] md:font-semibold text-[20px] font-semibold">Ai có thể tham gia cuộc thi?</h3>
+                <p class="xl:leading-[26px] mt-4 xl:text-[16px] lg:text-[16px] lg:leading-[26px]   md:text-[12px] md:leading-[24px] md:text-justify text-[12px] leading-[24px] text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </div>
+            <div class="img_firt overflow-hidden   cursor-pointer hover:opacity-90">
+                <img src="images/FirtContent.png " alt="" class="w-full img__item">
+            </div>
+        </div>
+        <!-- Benefits -->
+        <div class="benefits">
+           <div class="title">
+            <h3 class="mb-[32px] md:font-semibold md:text-2xl  text-[20px]">Lợi ích khi tham gia</h3>
+           </div>
+           <!-- Benefits list item IMG -->
+           <div class="benefits__list md:flex justify-between mb-[76px] block ">
+            <div class="item1__Content overflow-hidden rounded-2xl hover:opacity-80 hover:cursor-pointer  ">
+                <img src="images/item1_Content.png" alt="" class="w-full img__item">
+            </div>
+            <div class="item2__Content overflow-hidden rounded-2xl hover:opacity-80 hover:cursor-pointer">
+                <img src="images/item2_Content.png" alt="" class="w-full img__item">
+            </div>
+            <div class="item3__Content overflow-hidden rounded-2xl hover:opacity-80 hover:cursor-pointer">
+                <img src="images/item3_Content.png" alt="" class="w-full img__item">
+            </div>
+           </div>
+           <!-- List__Items -->
+           <!-- Competition -->
+           <div class="competition">
+            <h3 class="mb-[32px] font-semibold text-2xl mb-[32px]">Các cuộc thi</h3>
+           </div>
+           <div class="list__items grid xl:grid-cols-3 gap-[32px] mb-[45px] md:grid-cols-2  lg:grid-cols-3  ">
+            <div class="item1 mb-[40px]">
+                <div class=" overflow-hidden rounded-2xl hover:opacity-80 hover:cursor-pointer  ">
+                    <img src="images/img1_competition (1).png" alt="" class= " img__item  w-full ">
+                </div>
+                <h3 class="mt-[24px] mb-[32px]  font-semibold text-base text-[#1F2A37]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                <p class="text-[#A1A1AA] text-base  ">Thời gian: 20h00 ngày 08 - 03 - 2022</p>
+                <p class=" text-[#A1A1AA] text-base mt-[8px] mb-[32px]">Số người tham gia <span class="bg-[#1D98BF] text-center rounded text-white text-base font-normal px-[5px]">32</span></p>
+                
+                <button class="w-full border  rounded py-[8px]  border-[#F26F21] text-[#F26F21] hover:bg-orange-500 hover:text-white ">Đăng ký</button>
+            </div>
+            <div class="item2 mb-[40px]">
+                <div class="overflow-hidden rounded-2xl hover:opacity-80 hover:cursor-pointer">
+                <img src="images/img2_competition (2).png" alt="" class= "img__item  w-full">
+
+                </div>
+                <h3 class="mt-[24px] mb-[32px]  font-semibold text-base text-[#1F2A37]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                <p class="text-[#A1A1AA] text-base  ">Thời gian: 20h00 ngày 08 - 03 - 2022</p>
+                 <p class=" text-[#A1A1AA] text-base mt-[8px] mb-[32px]">Số người tham gia <span class="bg-[#1D98BF] text-center rounded text-white text-base font-normal px-[5px] ">32</span></p>
+               
+                <button class="w-full border  rounded py-[8px]  border-[#F26F21] text-[#F26F21] hover:bg-orange-500 hover:text-white ">Đăng ký</button>
+            </div>
+            <div class="item3 mb-[40px]">
+                <div class="overflow-hidden rounded-2xl hover:opacity-80 hover:cursor-pointer">
+                <img src="images/img3_competition (3).png" alt="" class= "img__item  w-full">
+
+                </div>
+                <h3 class="mt-[24px] mb-[32px]  font-semibold text-base text-[#1F2A37] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                <p class="text-[#A1A1AA] text-base  ">Thời gian: 20h00 ngày 08 - 03 - 2022</p>
+                 <p class=" text-[#A1A1AA] text-base mt-[8px] mb-[32px]">Số người tham gia <span class="bg-[#1D98BF] text-center rounded text-white text-base font-normal px-[5px]">32</span></p>
+               
+                <button class="w-full border  rounded py-[8px]  border-[#F26F21] text-[#F26F21] hover:bg-orange-500 hover:text-white ">Đăng ký</button>
+            </div>
+
+            <div class="item4 mb-[40px]">
+                <div class="overflow-hidden rounded-2xl hover:opacity-80 hover:cursor-pointer">
+                <img src="images/img1_competition (1).png" alt="" class="img__item w-full">
+
+                </div>
+                <h3 class="mt-[24px] mb-[32px]  font-semibold text-base text-[#1F2A37]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                <p class="text-[#A1A1AA] text-base  ">Thời gian: 20h00 ngày 08 - 03 - 2022</p>
+                <p class=" text-[#A1A1AA] text-base mt-[8px] mb-[32px]">Số người tham gia <span class="bg-[#1D98BF] text-center rounded text-white text-base font-normal px-[5px]">32</span></p>
+                
+                <button class="w-full border  rounded py-[8px]  border-[#F26F21] text-[#F26F21] hover:bg-orange-500 hover:text-white ">Đăng ký</button>
+            </div>
+            <div class="item5 mb-[40px]">
+                <div class="overflow-hidden rounded-2xl hover:opacity-80 hover:cursor-pointer">
+                <img src="images/img2_competition (2).png" alt="" class="img__item w-full">
+
+                </div>
+                <h3 class="mt-[24px] mb-[32px]  font-semibold text-base text-[#1F2A37]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                <p class="text-[#A1A1AA] text-base  ">Thời gian: 20h00 ngày 08 - 03 - 2022</p>
+                 <p class=" text-[#A1A1AA] text-base mt-[8px] mb-[32px]">Số người tham gia <span class="bg-[#1D98BF] text-center rounded text-white text-base font-normal px-[5px] ">32</span></p>
+               
+                <button class="w-full border  rounded py-[8px]  border-[#F26F21] text-[#F26F21] hover:bg-orange-500 hover:text-white ">Đăng ký</button>
+            </div>
+            <div class="item6 mb-[40px]">
+                <div class="overflow-hidden rounded-2xl hover:opacity-80 hover:cursor-pointer">
+                <img src="images/img3_competition (3).png" alt="" class="img__item w-full">
+
+                </div>
+                <h3 class="mt-[24px] mb-[32px]  font-semibold text-base text-[#1F2A37] ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                <p class="text-[#A1A1AA] text-base  ">Thời gian: 20h00 ngày 08 - 03 - 2022</p>
+                 <p class=" text-[#A1A1AA] text-base mt-[8px] mb-[32px]">Số người tham gia <span class="bg-[#1D98BF] text-center rounded text-white text-base font-normal px-[5px]">32</span></p>
+               
+                <button class="w-full border  rounded py-[8px]  border-[#F26F21] text-[#F26F21] hover:bg-orange-500 hover:text-white ">Đăng ký</button>
+            </div>
+           </div>
+        </div>
+        <!-- Rank -->
+        <div class="rank">
+            <h3 class=" font-semibold text-2xl mb-[24px]">Bảng xếp hạng trong tháng</h3>
+        </div>
+        <div class="Web_design">
+            <h3 class="text-[#71717A] text-2xl font-semibold mb-[39px]">Thiết kế web</h3>
+            <div class="design__list grid lg:grid-cols-4 gap-[32px] md:grid-cols-2">
+                <!-- Modal box -->
+                <div class="box1  m-auto flex flex-col justify-center">
+                    <div class="person mb-[12px]">
+                        <img src="images/Person.png" alt="" class="m-auto ">
+                    </div>
+                    <div class="name mb-[9px]">
+                        <p class="text-center">Nguyễn Văn A</p>
+                    </div>
+                    <!-- Start -->
+                   <div class="start flex m-auto  ">
+                    <img src="images/Vector.png" alt="" class="mr-[10px] "> <span class="text-sm font-medium text-[#A1A1AA]">Point: 150</span>
+                   </div>
+                   <!-- Khoa hoc -->
+                   <div class="courses flex flex-wrap  mt-[11px] ml-[20px]  ">
+                    <div class="mr-[13px] mb-2  ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Javascript</h6>
+
+                    </div>
+                    <div class="mr-[20px] mb-2 ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">HTML/Css</h6>
+
+                    </div>
+                    
+                    <div class="mr-[13px] mb-2 ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">React Js</h6>
+
+                    </div>
+                    <div class="mr-[20px] mb-2 ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Node Js</h6>
+                        
+                    </div>
+                   </div>
+
+
+                </div>
+                <div class="box1  m-auto flex flex-col justify-center">
+                    <div class="person mb-[12px]">
+                        <img src="images/Person.png" alt="" class="m-auto ">
+                    </div>
+                    <div class="name mb-[9px]">
+                        <p class="text-center">Nguyễn Văn A</p>
+                    </div>
+                    <!-- Start -->
+                   <div class="start flex m-auto  ">
+                    <img src="images/Vector.png" alt="" class="mr-[10px] "> <span class="text-sm font-medium text-[#A1A1AA]">Point: 150</span>
+                   </div>
+                   <!-- Khoa hoc -->
+                   <div class="courses flex flex-wrap  mt-[11px] ml-[20px]  ">
+                    <div class="mr-[13px] mb-2  ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Javascript</h6>
+
+                    </div>
+                    <div class="mr-[20px] mb-2 ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">HTML/Css</h6>
+
+                    </div>
+                    
+                    <div class="mr-[13px] mb-2 ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">React Js</h6>
+
+                    </div>
+                    <div class="mr-[20px] mb-2 ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Node Js</h6>
+                        
+                    </div>
+                   </div>
+
+
+                </div>
+                <div class="box1  m-auto flex flex-col justify-center">
+                    <div class="person mb-[12px]">
+                        <img src="images/Person.png" alt="" class="m-auto ">
+                    </div>
+                    <div class="name mb-[9px]">
+                        <p class="text-center">Nguyễn Văn A</p>
+                    </div>
+                    <!-- Start -->
+                   <div class="start flex m-auto  ">
+                    <img src="images/Vector.png" alt="" class="mr-[10px] "> <span class="text-sm font-medium text-[#A1A1AA]">Point: 150</span>
+                   </div>
+                   <!-- Khoa hoc -->
+                   <div class="courses flex flex-wrap  mt-[11px] ml-[20px] max-h-[60px] ">
+                    <div class="mr-[13px] mb-2  ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Javascript</h6>
+
+                    </div>
+                    <div class="mr-[20px] mb-2 ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">HTML/Css</h6>
+
+                    </div>
+                    
+                    <div class="mr-[13px] mb-2 ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">React Js</h6>
+
+                    </div>
+                    <div class="mr-[20px] mb-2 ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Node Js</h6>
+                        
+                    </div>
+                   </div>
+
+
+                </div>
+                <div class="box1  m-auto flex flex-col justify-center">
+                    <div class="person mb-[12px]">
+                        <img src="images/Person.png" alt="" class="m-auto ">
+                    </div>
+                    <div class="name mb-[9px]">
+                        <p class="text-center">Nguyễn Văn A</p>
+                    </div>
+                    <!-- Start -->
+                   <div class="start flex m-auto  ">
+                    <img src="images/Vector.png" alt="" class="mr-[10px] "> <span class="text-sm font-medium text-[#A1A1AA]">Point: 150</span>
+                   </div>
+                   <!-- Khoa hoc -->
+                   <div class="courses flex flex-wrap  mt-[11px] ml-[20px]  ">
+                    <div class="mr-[13px] mb-2  ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Javascript</h6>
+
+                    </div>
+                    <div class="mr-[20px] mb-2 ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">HTML/Css</h6>
+
+                    </div>
+                    
+                    <div class="mr-[13px] mb-2 ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">React Js</h6>
+
+                    </div>
+                    <div class="mr-[20px] mb-2 ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Node Js</h6>
+                        
+                    </div>
+                   </div>
+
+
+                </div>
+               
+            </div>
+        </div>
+        <!-- thiết kế đồ họa -->
+        <div class="graphic__design mb-[20px]">
+            <h3 class="text-[#71717A] text-2xl font-semibold mb-[39px] mt-[40px]">Thiế kế đồ họa</h3>
+            <div class="design__list grid lg:grid-cols-4 gap-[32px] md:grid-cols-2">
+                <!-- Modal box -->
+                <div class="box1  m-auto flex flex-col justify-center">
+                    <div class="person mb-[12px]">
+                        <img src="images/Person.png" alt="" class="m-auto ">
+                    </div>
+                    <div class="name mb-[9px]">
+                        <p class="text-center">Nguyễn Văn A</p>
+                    </div>
+                    <!-- Start -->
+                   <div class="start flex m-auto  ">
+                    <img src="images/Vector.png" alt="" class="mr-[10px] "> <span class="text-sm font-medium text-[#A1A1AA]">Point: 150</span>
+                   </div>
+                   <!-- Khoa hoc -->
+                   <div class="courses  flex   mt-[11px] ml-[20px] min-h-[60px] ">
+                    <div class="mr-[13px] mb-2  ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Photoshop</h6>
+
+                    </div>
+                    <div class="mr-[20px] mb-2 ">
+                    <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Illustrator</h6>
+
+                    </div>
+                      
+                </div>
+                <!-- Box2 -->
+                
+            </div>
+            <div class="box1  m-auto flex flex-col justify-center">
+                <div class="person mb-[12px]">
+                    <img src="images/Person.png" alt="" class="m-auto ">
+                </div>
+                <div class="name mb-[9px]">
+                    <p class="text-center">Nguyễn Văn A</p>
+                </div>
+                <!-- Start -->
+               <div class="start flex m-auto  ">
+                <img src="images/Vector.png" alt="" class="mr-[10px] "> <span class="text-sm font-medium text-[#A1A1AA]">Point: 150</span>
+               </div>
+               <!-- Khoa hoc -->
+               <div class="courses  min-h-[60px] flex flex-wrap  mt-[11px] ml-[20px]  ">
+                <div class="mr-[13px] mb-2  ">
+                <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Premier Pro</h6>
+
+                </div>
+                <div class="mr-[20px] mb-2 ">
+                <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Cinema 4D</h6>
+
+                </div>
+                
+                <div class="mr-[13px] mb-2 ">
+                <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Photoshop</h6>
+
+                </div>
+                
+            </div>
+
+
+        </div>
+
+            <!-- box 3 -->
+            <div class="box1  m-auto flex flex-col justify-center">
+                <div class="person mb-[12px]">
+                    <img src="images/Person.png" alt="" class="m-auto ">
+                </div>
+                <div class="name mb-[9px]">
+                    <p class="text-center">Nguyễn Văn A</p>
+                </div>
+                <!-- Start -->
+               <div class="start flex m-auto  ">
+                <img src="images/Vector.png" alt="" class="mr-[10px] "> <span class="text-sm font-medium text-[#A1A1AA]">Point: 150</span>
+               </div>
+               <!-- Khoa hoc -->
+               <div class="courses  min-h-[60px] flex flex-wrap  mt-[11px] ml-[20px]  ">
+                <div class="mr-[13px] mb-2  ">
+                <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Maya</h6>
+
+                </div>
+                <div class="mr-[20px] mb-2 ">
+                <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">After Effect</h6>
+
+                </div>
+                
+                
+               </div>
+
+
+            </div>
+            <!-- box 4 -->
+            <div class="box1  m-auto flex flex-col justify-center">
+                <div class="person mb-[12px]">
+                    <img src="images/Person.png" alt="" class="m-auto ">
+                </div>
+                <div class="name mb-[9px]">
+                    <p class="text-center">Nguyễn Văn A</p>
+                </div>
+                <!-- Start -->
+               <div class="start flex m-auto  ">
+                <img src="images/Vector.png" alt="" class="mr-[10px] "> <span class="text-sm font-medium text-[#A1A1AA]">Point: 150</span>
+               </div>
+               <!-- Khoa hoc -->
+               <div class="courses  min-h-[60px] flex flex-wrap  mt-[11px] ml-[20px]  ">
+                <div class="mr-[13px] mb-2  ">
+                <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Maya</h6>
+
+                </div>
+                <div class="mr-[20px] mb-2 ">
+                <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Photoshop</h6>
+
+                </div>
+                
+                <div class="mr-[13px] mb-2 ">
+                <h6 class="rounded hover:cursor-pointer hover:opacity-80 bg-[#1D98BF] px-[12px] text-sm font-normal text-white">Premier Pro</h6>
+
+                </div>
+                
+               </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    
+    </div>
+    <footer class=" mt-[86px] ">
+    <img src="images/foodter.png" alt="" class="w-full">
+    </footer>
+</div> 
+    <script src="assets/main.js"></script>
+</body>
+</html>

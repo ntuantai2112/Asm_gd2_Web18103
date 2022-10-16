@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1</title>
+    <!-- <link rel="stylesheet" href="assets/style.css"> -->
+    <!-- <link rel="stylesheet" href="assets/responsive.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="heaader">
+            <div class="banner">
+                <img src="assets/imges/Banner.jpg" alt="" class="w-full">
+            </div>
+            <div class="logo text-center m-auto my-8 flex justify-center" >
+                <img src="assets/imges/logo.png" alt="" class=" ">
+            </div>
+            <div class="nav">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="flex justify-center mb-20">
+                    <li class="px-4"><a class="text-xl font-bold hover:text-orange-500" href="#">Game</a></li>
+                    <li class="px-4"><a class="text-xl font-bold hover:text-orange-500" href="#">Champions</a></li>
+                    <li class="px-4"><a class="text-xl font-bold hover:text-orange-500" href="#">News</a></li>
+                    <li class="px-4"><a class="text-xl font-bold hover:text-orange-500" href="#">Patch Notes</a></li>
+                    <li class="px-4"><a class="text-xl font-bold hover:text-orange-500" href="#">Discover</a></li>
+                    <li class="px-4"><a class="text-xl font-bold hover:text-orange-500" href="#">Esports</a></li>
+                    <li class="px-4"><a class="text-xl font-bold hover:text-orange-500" href="#">Universe</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content grid grid-cols-2 gap-32  px-4">
+            <div class="content-choose m-auto mx-4">
+                <h3 class="text-5xl font-bold mb-8">CHOOSE YOUR CHAMPION</h3>
+                <p class="font-bold text-sm leading-7 mb-4">Whether you like to dive straight into the fray, support your teammates, or something in between, there’s a spot for you on the Rift.</p>
+                <button class="w-80 h-14 border text-lg font-bold   bg-sky-800 text-white hover:text-orange-500  " >Discover More Champions</button>
+            </div>
+            <div class="content-img">
+                <img src="assets/imges/image 27.png" alt="">
+            </div>
+
+           
+        </div>
+        <div class="footer">
+            <div class="sub-footer">
+                <div id="slogan">
+                    <span class="text-5xl font-bold  flex justify-center my-20">FAVOURITE CHAMPIONS</span>
+                </div>
+
+               <div class="item grid grid-cols-3 gap-8  px-4 mb-16">
+                <img class="w-full" src="assets/imges/image 28.jpg" alt="">
+                <img class="w-full" src="assets/imges/image 29.jpg" alt="">
+                <img class="w-full" src="assets/imges/image 30.jpg" alt="">
+               </div>
+            </div>
+            <div class="contact flex justify-between items-center w-full h-[100px] bg-sky-900  ">
+                <div class="address ml-4 text-white text-xl font-bold">
+                <span>© 2021 All Rights Reserved</span>
+
+                </div>                
+                <div class="email mr-4">
+                    <input class="border-yellow-500 border-2 mr-4 bg-sky-900 px-4 h-[20px] py-5 text-base  " type="email" placeholder="Email Address" style="color: #fff;">
+                    <button class="contact-btn ml-4 bg-amber-500  text-white py-3 px-5">Play For Free</button>
+                </div>
+               
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

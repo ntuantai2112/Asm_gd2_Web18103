@@ -1,0 +1,35 @@
+.img__item:hover{
+    transform: scale(112%,112%);
+    transition: all linear .3s;
+    opacity:.8;
+    cursor: pointer;
+}
+.menu__mobile{
+    transform: translateX(-100%) ;
+    animation: fadeOut linear .3s;
+}
+.scrollbar {
+    background-color: #F5F5F5;
+    float: left;
+    height: 300px;
+    margin-bottom: 25px;
+    margin-left: 22px;
+    margin-top: 40px;
+    width: 65px;
+       overflow-y: scroll;
+}
+
+.force-overflow {
+    min-height: 450px;
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

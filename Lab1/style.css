@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    overflow: hidden;
+}
+
+header {
+    display: none;
+}
+
+.header__img {
+    width: 100vw;
+    height: 100vh;
+    background: url('imgs/image\ 19.jpg') top center / cover no-repeat;
+    margin-bottom: 32px;
+}
+
+.header__logo {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+
+.header__navbar {
+    display: flex;
+
+    justify-content: space-evenly;
+}
+
+.header__effect {
+    list-style: none;
+}
+
+.header__link {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000;
+    text-decoration: none;
+}
+
+.header__link:hover {
+    color: orangered;
+    transition: all linear .3s;
+}
+
+/* header__mobile */
+
+.header__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    margin-bottom: 64px;
+}
+
+.header__mobile--menu {
+    position: relative;
+}
+
+.header__mobile--menu:hover .header__mobile--nav {
+    display: block;
+}
+
+.header__mobile--menu svg {
+    width: 32px;
+}
+
+.header__mobile--nav {
+    animation: fadeIn ease-in .2s;
+    display: none;
+    width: 356px;
+    background-color: #0E4C67  ;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 12px;
+}
+
+.header__mobile--list {
+    list-style: none;
+}
+
+.header__mobile--item {
+    padding-bottom: 12px;
+    padding-top: 6px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.header__mobile--item:hover {
+    background-color: #FFA800;
+    color: #fff;
+}
+
+
+/* content */
+
+.content {
+    padding: 16px;
+}
+
+.contetn__champ {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.contetn__champ--text h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.contetn__champ--img img {
+    width: 100%;
+}
+
+.contetn__champ--text p {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.contetn__champ--text button {
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 16px 24px;
+    background-color: #0E4C67;
+    color: #fff;
+    margin-top: 16px;
+}
+
+.contetn__champ--text button:hover {
+    cursor: pointer;
+    transition: all linear .2s;
+    background-color: orangered;
+    color: #fff;
+}
+
+.champ__favourite h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1px;
+    margin-top: 64px;
+}
+
+.champ__list {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 32px;
+    margin-bottom: 64px;
+}
+
+.champ__list img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.cham__list-img {
+    margin-top: 32px;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    padding: 0 16px;
+    justify-content: space-between;
+    background-color: #0E4C67;
+    height: 100px;
+    align-items: center;
+}
+
+.footer__text p {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.footer__form input {
+    padding: 12px 22px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid #FFA800;
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer__form button {
+    padding: 14px 24px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #FFA800;
+    border: none;
+    margin-left: 32px;
+}
+
+.footer__form button:hover {
+    color: #000;
+    cursor: pointer;
+}
+/* Table */
+@media (min-width: 640px) {
+    .champ__list {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+/* Laptop */
+@media (min-width: 768px) {
+    .champ__list {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .cham__list-img {
+        margin-top: 12px;
+    }
+
+    .contetn__champ {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .contetn__champ--img img {
+        width: 50vw;
+    }
+
+    .header__navbar {
+        padding: 0;
+    }
+
+    .header__mobile {
+        display: none;
+    }
+
+    header {
+        display: block;
+    }
+}
+/* Desktop */
+@media (min-width: 1024px) {
+    .champ__list {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .contetn__champ {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .header__navbar {
+        padding: 0 216px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

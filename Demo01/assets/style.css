@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: BeaufortforLOL-Bold;
+    font-size: 20px;
+    font-style: Bold;
+}
+.main{
+    width: 1440px;
+    margin: auto;
+}
+.banner{
+    width: 100%;
+}
+.logo{
+    text-align: center;
+    width: 100%;
+    margin:32px 0px;
+    
+}
+.nav ul{
+    text-align: center;
+    padding: 20px 0px;
+}
+.nav ul li{
+    display: inline-block;
+    padding: 0px 16px;
+    margin-bottom: 60px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+.nav ul li a:hover{
+    color: orangered;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 688px;
+   grid-gap:32px;
+
+}
+.content .content-choose{
+    /* text-align: center; */
+    margin: auto;
+}
+.content .content-choose h3{
+    font-weight: 700;
+    font-size: 48px;
+    font-style: Bold;
+    margin-bottom: 32px;
+}
+.content .content-choose p{
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: Bold;
+    margin-bottom: 32px;
+}
+.content-choose span{
+    background-color: #0E4C67;
+    color: #fff;
+    padding: 16px 24px;
+    font-weight: 700;
+    font-size: 20px;
+   
+}
+.content-choose span:hover{
+    color: #FFA800;
+    cursor: pointer;
+}
+.footer .sub-footer #slogan{
+    display: block;
+    text-align: center;
+    margin: 64px 0px;
+    
+}
+.footer .sub-footer #slogan span{
+    font-size: 48px;
+    font-style: Bold;
+    font-weight: 700;
+   
+}
+.footer .item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   grid-gap:32px;
+   margin-bottom: 64px;
+}
+.footer .contact{
+    position: relative;
+    background-color: #0E4C67;
+    padding:18px 16px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.contact .address{
+    position: absolute;
+    top: 40px;
+    color: #fff;
+}
+.footer .contact .email{
+   position: absolute;
+   right: 20px;
+   top: 30px;
+   font-weight: 700;
+}
+ .contact .email input{
+    border: 1px solid #FFA800;
+    padding: 10px;
+    background-color: #0E4C67;
+    color: #fff;
+}
+.contact .email .contact-btn{
+    background-color: #FFA800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.contact .email .contact-btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Responsive */
+
+

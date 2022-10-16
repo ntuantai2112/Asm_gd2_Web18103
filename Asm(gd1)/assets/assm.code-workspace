@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "D:/assm"
+		},
+		{
+			"path": "../../../F8_Thiết kế Web với HTML và CSS"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Kỹ năng trình bày trang web"
+	}
+}

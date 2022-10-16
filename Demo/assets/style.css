@@ -1,0 +1,97 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto;
+    font-size: 20px;
+}
+.main{
+    width: 1440px;
+    margin: auto;
+}
+.logo{
+    text-align: center;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.nav ul{
+    text-align: center;
+    padding: 20px 0px;
+}
+.nav ul li{
+display: inline-block;
+padding: 0 16px;
+}
+.nav li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+.nav li a:hover{
+    color: orangered;
+}
+.banner img{
+    width: 100%;
+    border: none;
+}
+.diana-title{
+    text-align: center;
+    
+}
+.diana-title h2{
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 64px;
+}
+.diana-title #diana-slogan{
+    color: #C5A0F0;
+    margin-top: 16px;
+    margin-bottom: 64px;
+}
+.item{
+    /*  display: grid; hiển thị theo dạng lưới */
+    display: grid;
+    grid-template-columns: 688px 1fr;
+    grid-gap:32px;
+    margin: 40px 16px;
+}
+.item-content{
+    margin: auto;
+}
+.item-content h3{
+    margin-bottom: 16px;
+}
+.check-out{
+    background-color: #000;
+    text-align: center;
+    padding: 18px 0px;
+    margin:64px 16px ;
+    
+}
+.check-out span{
+    color: #fff;
+}
+.check-out span:hover{
+    color: orange;
+}
+.sub-banner{
+    width: 100%;
+    margin-left: 16px;
+}
+.footer{
+ 
+    margin-top:60px ;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 32px 0;
+}
+.footer:hover{
+    color: orange;
+}
